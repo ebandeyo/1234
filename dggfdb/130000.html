@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width"
+      ="device-width,"
+      initial-scale="1.0"
+    />
+    <title>타이틀</title>
+  </head>
+  <body>
+    <h1 id="title">Hello World~</h1>
+    <section id="wrap">
+      <article class="box1">Text1</article>
+      <article class="box2">Text2</article>
+      <article class="box3">Text3</article>
+    </section>
+    <a href="https://www.youtube.com/channel/UC1TIfeI3OOnyKiqC4IUsnPw">CLICK</a>
+    <div id="box"></div>
+    <a href="#" class="btnLeft">왼</a>
+    <a href="#" class="btnRight">오</a>
+    <script>
+      const title = document.querySelector("#title");
+      console.log(title);
+
+      const link = document.querySelector("a");
+      link.addEventListener("click", () => {
+        console.log("클릭함");
+      });
+      const box = document.querySelector("#box");
+      box.style.width = "200px";
+      box.style.height = "200px";
+      box.style.background = "aqua";
+      box.style.margin = "100px auto";
+
+      const btnleft = document.querySelector(".btnLeft");
+      const btnright = document.querySelector(".btnRight");
+
+      let num = 0;
+      btnleft.addEventListener("click", () => {
+        num--;
+        box.style.transform = `rotate(${num * 30}deg)`;
+      });
+      btnright.addEventListener("click", () => {
+        num++;
+        box.style.transform = `rotate(${num * 30}deg)`;
+      });
+
+      box.addEventListener("mouseenter", () => {
+        box.style.background = "hotpink";
+      });
+      box.addEventListener("mouseleave", () => {
+        box.style.background = "aqua";
+      });
+    </script>
+  </body>
+</html>

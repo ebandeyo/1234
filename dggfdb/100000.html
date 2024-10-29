@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function over(obj) {
+        obj.src = "img/banana.png";
+      }
+      function out(obj) {
+        obj.src = "img/apple.jpg";
+      }
+    </script>
+    <title>타이틀</title>
+  </head>
+  <body>
+    <hr />
+    <img src="img/apple.jpg" onmouseover="over(this)" onmouseout="out(this)" />
+    <a href="javascript:alert('클릭하라고 진짜 클릭하네;')"> 클릭해 </a>
+  </body>
+</html>

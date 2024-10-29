@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width" ="device-width, initial-scale="1.0" />
+    <title>타이틀</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <ul class="btns">
+      <li class="on">btn1</li>
+      <li>btn2</li>
+      <li>btn3</li>
+    </ul>
+
+    <section>
+      <article class="on">box1</article>
+      <article>box2</article>
+      <article>box3</article>
+    </section>
+    <script>
+      const btns = document.querySelectorAll(".btns li");
+      const boxs = document.querySelectorAll("section article");
+
+      function activation(index, list) {
+        for (let el of list) {
+          el.classList.remove("on");
+        }
+        list[index].classList.add("on");
+      }
+      for (let i = 0; i < btns.lenght; i++) {
+        btns[i].addEventLisrener("click", (e) => {
+          activation(i, btns);
+          activation(i, boxs);
+        });
+      }
+    </script>
+  </body>
+</html>

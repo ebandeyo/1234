@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>타이틀</title>
+  </head>
+  <body>
+    <h3>로그인 폼</h3>
+    <hr />
+    <form name="fo" method="get">
+      <input
+        type="color"
+        value="#00FF00"
+        onchange="document.body.style.backgroundColor=this.value"
+      />
+      <fieldset>
+        <legend>메일정보</legend>
+        <input type="email" placeholder="이메일 입력" />
+        <input type="submit" value="전송" />
+      </fieldset>
+      <br />
+      <input type="radio" name="china" value="1" />
+      짜장면<img src="jajang.png" /><br />
+      <input type="radio" name="china" value="2" />
+      짬뽕<img src="jjambbong.png" /><br />
+      <input type="radio" name="china" value="3" />
+      탕수육<img src="tangsuyuk.png" /><br />
+
+      <label>사용자 ID : <input type="text" size="15" value="" /></label><br />
+      <label>비밀번호 : <input type="password" size="15" value="" /></label
+      ><input type="submit" value="완료" />
+      <br />
+
+      <input type="text" list="countires" /><br />
+      <datalist id="countires">
+        <option value="가나"></option>
+        <option value="스위스"></option>
+        <option value="브라질"></option>
+      </datalist>
+    </form>
+  </body>
+</html>

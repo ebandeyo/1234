@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      class User {
+        constructor(name, n) {
+          this.name = name;
+          this.n = n;
+          this.school = "e비고";
+          this.grade = "3학년";
+        }
+        print_info() {
+          document.write(
+            this.school +
+              " " +
+              this.grade +
+              " " +
+              this.name +
+              " " +
+              this.n +
+              "<br>"
+          );
+        }
+      }
+      class Person extends User {
+        print_info() {
+          document.write(
+            "사람: " +
+              this.school +
+              " " +
+              this.grade +
+              " " +
+              this.name +
+              " " +
+              this.n +
+              "<br>"
+          );
+        }
+      }
+    </script>
+    <title>타이틀</title>
+  </head>
+  <body>
+    <h1 id="clock">현재시간</h1>
+    <script>
+      let user = new Person("민승", 30400);
+      user.print_info();
+
+      function getTime() {
+        let current = new Date();
+        if (current.getSeconds() % 2 == 0) {
+          document.body.style.backgroundColor = "violet";
+        } else {
+          document.body.style.backgroundColor = "Lightskyblue";
+        }
+        // document.write("현재");
+        // document.write(current.getHours(),"시,");
+        // document.write(current.getMinutes(),"분,");
+        // document.write(current.getSeconds(),"초<br>4");
+        hour = current.getHours();
+        minutes = current.getMinutes();
+        seconds = current.getSeconds();
+
+        clock = document.getElementById("clock");
+        clock.innerText = `${hour}:${minutes}:${seconds}`;
+      }
+      setInterval(getTime, 1000);
+    </script>
+  </body>
+</html>

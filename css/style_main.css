@@ -1,0 +1,240 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+	z-index: 100;
+  border-bottom: 1px solid #add;
+  background: #ada996; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #eaeaea,
+    #dbdbdb,
+    #f2f2f2,
+    #ada996
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /*opacity: 0.7;*/
+  border:none;
+  height: 75px;
+}
+header .inner {
+  width: 1180px;
+  height: 75px;
+  margin: 0px auto;
+  position: relative;
+}
+header .inner h1 {
+  position: absolute;
+  left: 0px;
+  bottom: 15px;
+}
+header .inner h1 a {
+  font-family: "Noto Sans KR", sans-serif;
+  color: black;
+}
+header .inner #gnb {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+header .inner #gnb li {
+  float: left;
+}
+header .inner #gnb a {
+  display: block;
+  color: black;
+  font-size: 25px;
+  font-family: "Noto Sans KR", sans-serif;
+  padding: 20px 40px;
+  letter-spacing: 1px;
+}
+figure {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: calc(100vh - 160px);
+}
+figure video {
+  object-fit:cover;
+  /*object-fit: cover;*/
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  position: absolute;
+}
+figure .inner {
+  width: 1180px;
+  margin: 0px auto;
+  top: 60%;
+  position: relative;
+}
+figure .inner h1 {
+  font-size: 80px;
+  letter-spacing: 20px;
+  color: white;
+  font-family: "Noto Sans KR", sans-serif;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+figure .inner p {
+  letter-spacing: 5px;
+  color: white;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 30px;
+}
+figure .inner h1:hover {
+  color: black;
+}
+footer {
+  width: 100%;
+  background: #ddd;
+
+  padding: 20px 0px;
+  border-top: 1px solid #888;
+  clear: both;
+}
+footer .inner {
+  width: 1180px;
+  margin: 0px auto;
+}
+footer .inner .upper {
+  width: 100%;
+  border-bottom: 1px solid #777;
+  padding-bottom: 10px;
+  text-align: center;
+}
+footer .inner .lower {
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 18px;
+  color: #555;
+  font-family: "Noto Sans KR", sans-serif;
+}
+footer .inner .lower address {
+  margin-bottom: 15px;
+}
+.AboutNa {
+  width: 1180px;
+  margin: 0px auto;
+}
+.AboutNa .inner {
+  width: 100%;
+  height: 250px;
+}
+.subject {
+  width: 100%;
+  text-align: center;
+  letter-spacing: 5px;
+  font-size: 80px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.AboutNa .content_left {
+  width: 60%;
+  float: left;
+  text-align: center;
+}
+.AboutNa .content_right {
+  width: 40%;
+  height: 100%;
+  margin: 0px auto;
+  float: right;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+}
+.AboutNa .content_left img {
+  width: 70%;
+}
+.Skill {
+  font-size: 60px;
+  padding: 50px;
+}
+.Skill .inner {
+  text-align: center;
+}
+.Skill .inner h2 {
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: blue;
+}
+.Skill .inner img {
+  width: 300px;
+  margin-left: 5px;
+  margin-right: 20px;
+}
+.if {
+  padding: 50px;
+}
+.if .video {
+  text-align:center;
+}
+.Hobby {
+  width: 100%;
+  padding: 50px;
+}
+.Hobby .inner {
+  width: 1180px;
+  margin: 0px auto;
+}
+.Hobby .inner .wrap article {
+  width: 280px;
+  float: left;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.Hobby .inner .wrap article .pic {
+  width: 100%;
+  height: 120px;
+  position: relative;
+}
+.Hobby .inner .wrap article .pic img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+/*body {
+  padding-top: 75px;
+}*/
+#toTop {
+  position: fixed;
+  bottom: 50px;
+  right: 0;
+}
+#toTop a {
+  width: 108px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: #666666;
+
+  /* transition */
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s;
+}
+.contents{width:50%; margin:0 auto; text-align:justify; line-height:1.4em; }
